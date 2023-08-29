@@ -12,3 +12,10 @@ override_special = "7477Ejjk**&&###$$$"
 output "random-string" {
 value = random_string.rand_str[*].result
 }
+
+
+resource "local_file" "variable" {
+filename = var.filename
+content = var.content
+}
+
